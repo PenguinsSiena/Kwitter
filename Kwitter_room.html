@@ -1,0 +1,115 @@
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Kwitter Room Names</title>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+      <style>
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 470px}
+    
+    /* Set gray background color and 100% height */
+  
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: rgb(102, 154, 174);
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+
+       #bod{
+    background-color: rgb(162, 224, 249);
+}
+
+    #room_name{
+        width:30%;
+    }
+
+    #li{
+      background-color: rgb(254, 91, 91);
+    }
+    #pl{
+      color:rgb(255, 255, 255);
+    }
+    #okay{
+      background-color: rgb(198, 232, 244);
+      border-radius: 15px;
+      border-style: dotted;
+      width: 45%;
+    }
+      </style>
+    </head>
+    <body id="bod">
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Kwitter Rooms</a></li>
+
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <button id="pl" class="glyphicon glyphicon-log-out btn btn-danger" onclick="logout()">Logout</button>
+      </ul>
+    </div>
+  </div>
+</nav>
+<center>
+  <img id="kwit" style="width: 270px" src="Untitled_Artwork (1).png">
+       <h3 id="user_name" class="color_white"></h3>
+  <div class="form-group input_div_room_page">
+ <div id="okay">  <h5>  Have a look at the rooms avaliable or create one for your friends. If your friends have already made a room, simply enter their room name into the "Type in Room Name" field below. </h5></div>
+   <br>
+   <h2>Search or Add Room</h2> 
+  
+  <input type="text" class="form-control" id="room_name" placeholder="Type in Room Name"> 
+   <br>
+ <button onclick="addRoom()" class="btn btn-success">OK</button> 
+ <br>
+
+          <br>
+          <div id="output"></div>
+
+      </div>    
+      </div>
+    </div>
+  </div>
+
+</center>
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<footer class="container-fluid text-center">
+  <p>Kwitter</p>
+</footer>
+<script src="Kwitter_room.js"></script>
+</body>
+</html>

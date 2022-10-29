@@ -1,0 +1,34 @@
+#output
+{
+	padding: 10px; width:60%;background: rgba(255,255,255,0.8);border-radius: 15px;
+}
+.room_name
+{
+	cursor: pointer;
+	font-size: 20px;
+    background-color:  rgba(255,255,255,0.8);
+    width:30%;
+}
+.input_div_message_page
+{
+	position: fixed;bottom: 0px;width: 100%;background: aliceblue;
+}
+#msg{
+	width: 46%;
+	display: inline-block;
+}
+#sendd{
+	width: 10%;
+	display: inline-block;
+}
+#pagebody{
+	background-color: rgb(162, 224, 249);
+}
+
+#logout{
+	position: fixed;right: 0px;width: 5% ;
+}
+.message_h4
+{
+	padding-left:5px;color:grey;
+}
